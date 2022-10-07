@@ -2,32 +2,53 @@ body {
     background-color: midnightblue;
 }
 
-@keyframes mymove {
-    0%   {top: 0px;}
-    25%  {top: 100px;}
-    75%  {top: 50px}
-    100% {top: 100px;}
+img {
+    animation-duration: 15s;
+    animation-name: slidein;
+    border-radius: 50%;
+
+}
+
+h2 {
+    margin: 35px;
+    text-align: center;
+    letter-spacing: 10px;
+    font-size: 80px;
+    color: palegreen;
+    padding-top: 50px;
+}
+
+@keyframes slidein {
+    from {
+    margin-left: 45%;
+    width: 45%;
+    }
+  
+    to {
+    margin-left: 0%;
+    width: 50%;
+    }
+
 }
 
 h1 {
-    position: center;
-    animation: mymove 20s infinite;
+    animation-duration: 20s;
+    animation-name: mymove;
+    margin: 20px;
     text-align: center;
-    width: 50%;
-    height: 30vh;
-    font-size: 40px;
-    color: purple;
-    border: 1px solid plum;
-    transition: 10s linear;
-    -webkit-transition: 10s linear;
-    -moz-transition: 10s linear;
-    -ms-transition: 10s linear;
-    -o-transition: 10s linear;
-    -webkit-animation: mymove 20s infinite;
+    text-transform: uppercase;
+    color:blueviolet;
+    letter-spacing: 5px;
+    padding-top: 35px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid white;
+
 }
 
-p{
-    margin: 40px;
+p {
+    animation-duration: 10s;
+    animation-name: slidein;
+    margin: 20px;
     text-align: center;
     text-transform: uppercase;
     color:blueviolet;
@@ -37,20 +58,3 @@ p{
     border-bottom: 1px solid white;
 }
 
-h1:hover{
-    border: 1px solid transparent;
-    background-image: url(/image/cutecat.jpg);
-    background-position: center;
-    background-size: 50%;
-    background-repeat: repeat;
-}
-
-
-h2{
-    margin: 35px;
-    text-align: center;
-    letter-spacing: 10px;
-    font-size: 80px;
-    color: palegreen;
-    padding-top: 50px;
-}
