@@ -2,13 +2,6 @@ body {
     background-color: midnightblue;
 }
 
-img {
-    animation-duration: 15s;
-    animation-name: slidein;
-    border-radius: 50%;
-
-}
-
 h2 {
     margin: 35px;
     text-align: center;
@@ -18,21 +11,8 @@ h2 {
     padding-top: 50px;
 }
 
-@keyframes slidein {
-    from {
-    margin-left: 45%;
-    width: 45%;
-    }
-  
-    to {
-    margin-left: 0%;
-    width: 50%;
-    }
-
-}
-
 h1 {
-    animation-duration: 20s;
+    animation-duration: 50s;
     animation-name: mymove;
     margin: 20px;
     text-align: center;
@@ -42,11 +22,10 @@ h1 {
     padding-top: 35px;
     padding-bottom: 20px;
     border-bottom: 1px solid white;
-
 }
 
 p {
-    animation-duration: 10s;
+    animation-duration: 50s;
     animation-name: slidein;
     margin: 20px;
     text-align: center;
@@ -57,4 +36,3 @@ p {
     padding-bottom: 20px;
     border-bottom: 1px solid white;
 }
-
