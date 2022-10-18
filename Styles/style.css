@@ -2,6 +2,34 @@ body {
     background-color: midnightblue;
 }
 
+@keyframes heartBeat {
+    from {
+        background-color: blueviolet;
+        margin-left: 45%;
+        width: 45%;
+    }
+    to{
+        background-color: aquamarine;
+        margin-left: 0%;
+        width: 50%;
+    }
+
+}
+
+.logo {
+    display: inline-block;
+    margin: 0 0.5rem;
+  
+    animation: heartBeat; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 5s; /* don't forget to set a duration! */   
+}
+
+img {
+    animation-duration: 35s;
+    animation-name: heartBeat;
+    border-radius: 50%;
+}
+
 h2 {
     margin: 35px;
     text-align: center;
@@ -12,8 +40,9 @@ h2 {
 }
 
 h1 {
+    display: inline-block;
     animation-duration: 50s;
-    animation-name: mymove;
+    animation-name: heartBeat;
     margin: 20px;
     text-align: center;
     text-transform: uppercase;
@@ -36,3 +65,4 @@ p {
     padding-bottom: 20px;
     border-bottom: 1px solid white;
 }
+
